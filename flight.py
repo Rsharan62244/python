@@ -21,6 +21,7 @@ while True:
     person=input("enter person name (or enter 'done' to finish):")
     people.append(person)
     if person.lower()=='done':
+        person.remove('done')
         break
 people.sort()
 for person in people:
